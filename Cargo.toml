@@ -1,0 +1,12 @@
+[package]
+name = "jmdictdb"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+quick-xml ={ version = "0.38.1", features = ["serialize"] }
+sqlx = { version = "0.8.6", features = ["sqlite", "runtime-tokio-native-tls"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+regex = "1"
+serde_json = "1"
