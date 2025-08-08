@@ -32,7 +32,7 @@ pub const DICT_URL: &str = "data/JMdict_e";
 
 3. **Search in your Rust code:**
 ```rust
-use jmdict::dict_db::{DictDb, DB_URL};
+use jmdictdb::dict_db::{DictDb, DB_URL};
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
 
@@ -75,7 +75,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
 
 4. use `contains_kanji` to tell which function to call, it's not perfect, but you can modify it
 ```rust
-use jmdict::contains_kanji;
+use jmdictdb::contains_kanji;
 let query = "食べる";
 if contains_kanji(query) {
 	// Use keb search
