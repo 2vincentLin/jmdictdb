@@ -3,3 +3,5 @@ JMdict
 JMdict_e
 *.db
 *.sqlite
+*.db-shm
+*.db-wal
